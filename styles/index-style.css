@@ -108,7 +108,7 @@ main{
 
 .nav{
 	display: block;
-	width: 50%;
+	width: 54%;
 	height: 100px;
 	float: left;
 	padding: 0;
@@ -130,16 +130,22 @@ main{
 }
 
 .logo-icon{
+	float: left;
 	position: relative;
 	width: 23px;
 	height: 23px;
 	filter: invert(29%) sepia(78%) saturate(3101%) hue-rotate(339deg) brightness(97%) contrast(87%);
-	margin-right: 5px;;
+	margin-right: 5px;
 }
 
 
 .mega-shit-icon{
 	margin-right: 2px;
+}
+
+.shit-fuck{
+	float: left;
+	margin: 0;
 }
 
 a{
