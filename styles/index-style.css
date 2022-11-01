@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Inter:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+
 html{
 	scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -61,6 +64,11 @@ header .clouds .cloudimg{
 .imgp{
 	width: 50px;
 	height: 50px;
+	transition: 1s;
+}
+
+.imgp:hover{
+	scale: 1.2;
 }
 .perehodic{
 	width: 50px;
@@ -104,7 +112,7 @@ main{
 	height: 100px;
 	float: left;
 	padding: 0;
-	margin-left: 510px;
+	margin-left: 450px;
 	padding-top: 40px;
 }
 
@@ -119,6 +127,19 @@ main{
 	text-decoration: none;
 	margin-left: 120px;
 	transition: 1s;
+}
+
+.logo-icon{
+	position: relative;
+	width: 23px;
+	height: 23px;
+	filter: invert(29%) sepia(78%) saturate(3101%) hue-rotate(339deg) brightness(97%) contrast(87%);
+	margin-right: 5px;;
+}
+
+
+.mega-shit-icon{
+	margin-right: 2px;
 }
 
 a{
@@ -145,7 +166,7 @@ a{
 	box-shadow: 2 2 15 black;
 	width: 450px;
 	margin-top: 90px;
-	margin-left: 740px;
+	margin-left: 730px;
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
 }
 
