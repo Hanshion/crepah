@@ -1,6 +1,21 @@
 const list = document.querySelector('.list')
 const items = document.querySelectorAll('.flight')
 
+function fadeElementIn(element) {
+    element.style.display = "inline-block"
+
+    setTimeout(() => {
+        element.style.opacity = 1
+    }, 300)
+}
+
+function fadeElementOut(element) {
+    element.style.opacity = 0
+
+    setTimeout(() => {
+        element.style.display = "none"
+    }, 300)
+}
 
 function filter() {
     list.addEventListener('click', event => {
@@ -10,28 +25,29 @@ function filter() {
         switch(targetId) {
             case 'all':
                 items.forEach(item => {
-                    item.style.display = 'inline-block'
+                    fadeElementIn(item)
                 })
             break
             case 'local':
                 items.forEach(item => {
                     if(item.classList.contains('local')){
-                        item.style.display = 'inline-block'
+                        fadeElementIn(item)
                     } else {
-                        item.style.display = 'none'
+                        fadeElementOut(item)
                     }
                 })
             break
             case 'international':
                 items.forEach(item => {
                     if(item.classList.contains('international')){
-                        item.style.display = 'inline-block'
+                        fadeElementIn(item)
                     } else {
-                        item.style.display = 'none'
+                        fadeElementOut(item)
                     }
                 })
             break
         }
     })
 }
+
 filter()
