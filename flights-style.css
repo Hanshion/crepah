@@ -9,14 +9,6 @@ body{
 	background: #D6D6D6;
 }
 
-a{
-	position: absolute;
-	margin-top: 15px;
-	right: 92px;
-	text-decoration: none;
-	color: white;
-}
-
 .main-block{
 	width: 1376px;
 	height: 100vh;
@@ -25,9 +17,11 @@ a{
 	margin: 0 auto 0 auto;
 }
 
+/* TODO: resize text with list, for now text will be hidden when overflows */
+
 .list{
-	position: relative;
-	display: inline-block;
+	display: flex;
+	flex-flow: row;
 	width: 100%;
 	height: 7vh;
 	list-style: none;
@@ -39,7 +33,7 @@ a{
     font-style: normal;
 	text-align: center;
 	float: left;
-	font-size: 23px;
+	font-size: 24px;
 	color: white;	
 	height: 100%;
 	width: 40%;
@@ -47,12 +41,13 @@ a{
 	background: #FF3333;
 	transition: 0.5s;
 	z-index: 1000;
+	overflow:hidden;
 }
 
 .list-item p{
-	z-index: 0;
+	display: inherit;
 	margin-top: 15px;
-	display: inline;
+	pointer-events: none;
 }
 
 #button-return{
@@ -73,17 +68,6 @@ a{
     margin-top: 60px;
     margin-left: 97px;
     display: inline-block;
-}
-
-.city-from{
-	width: 182px;
-    height: 83px;
-    margin: 43px 0 0 17px;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 17px;
-    float: left;
 }
 
 .flight-from-time{
@@ -127,17 +111,6 @@ a{
     font-size: 14px;
 }
 
-.city-in{
-	width: 220px;
-    height: 83px;
-    margin: 43px 0 0 17px;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 17px;
-    float: left;
-}
-
 .flight-in-time{
 	margin-top: 12px;
 	font-weight: 400;
@@ -160,6 +133,28 @@ a{
 	height: 38px;
 	margin-left: 190px;
 	margin-top: 14px;
+}
+
+.city-in{
+	width: 220px;
+	height: 83px;
+	margin: 43px 0 0 17px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 17px;
+	float: left;
+}
+
+.city-from{
+	width: 182px;
+	height: 83px;
+	margin: 43px 0 0 17px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 17px;
+	float: left;
 }
 
 .roubles{
