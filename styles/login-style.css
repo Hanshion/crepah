@@ -116,7 +116,7 @@ input:focus {
 
 .alert{
     height: 1vmax;
-    color: red;
+    color: rgb(41, 41, 41);
     text-align: center;
 }
 
@@ -170,4 +170,16 @@ a:hover{
     font-size: 1.04vmax;
     font-weight: 400;
     float: left;
+}
+
+.signup-form{
+    display: none;
+}
+
+.div-register-button{
+    margin-top: 2.25vmax;
+}
+
+.register-button{
+    font-size: 0.98vmax;
 }
