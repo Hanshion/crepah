@@ -115,6 +115,10 @@ input:focus {
 }
 
 .alert{
+    bottom: 5.8vmax;
+    width: 100%;
+
+    position: absolute;
     height: 1vmax;
     color: rgb(41, 41, 41);
     text-align: center;

@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
+	<meta charset='utf8mb4_0900_ai_ci'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Вход</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
