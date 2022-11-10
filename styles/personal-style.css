@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100;
+    height: 100%;
+    background-color: #D6D6D6;
+}
+
+main{
+    width: 71.67vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.25);
+}
+
+header{
+    width: 100%;
+    height: 6%;
+    background-color: #FF6A6A;
+}
+
+.user{
+    float: left;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon{
+    float: left;
+    width: 2vw;
+    height: 2vw;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(74deg) brightness(100%) contrast(99%);
+}
+
+.icon{
+    margin-right: 5%;
+    width: 1.3vw;
+    height: 1.3vw;
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(74deg) brightness(100%) contrast(99%);
+}
+
+.username{
+    text-align: center;
+    margin: 0;
+    float: left;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 2vh;
+}
+
+ol{
+    width: 75%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+}
+
+li{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float: left;
+    font-size: 2vh;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: 1s;
+}
+
+li:hover{
+    background-color: #ffacac;
+}
+
+.bron-flights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+}
+
+.bron-hr{
+    border: 1px solid black;
+    float: left;
+    width: 30%;
+}
+
+.bron-flights-text{
+    margin: 0 6vh 0 6vh;
+    float: left;
+    font-size: 2vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.flight{
+	position: relative;
+	width: 1183px;
+   height: 140px;
+   background: #E6E6E6;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   margin-top: 60px;
+   margin-left: 97px;
+   display: inline-block;
+	
+   transition: opacity 0.3s;
+   opacity: 1;
+}
+
+.flight-from-time{
+	margin-top: 12px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.flight-from-date{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+@keyframes plane-pic-fly-animation {
+	0% {
+		transform: translateX(-300%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.plane-pic{
+	position: relative;
+	top: -25px;
+	width: 50px;
+	height: 50px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	animation: plane-pic-fly-animation;
+	animation-timing-function: ease-out;
+	animation-duration: 2s;
+}
+
+.flight-time{
+	float: left;
+	width: 411px;
+    height: 70px;
+    margin-top: 39px;
+    text-align: center;
+}
+
+.flight-hr{
+	border: 1px dashed #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+
+.flight-time-text{
+	margin-top: -25px;
+	font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.flight-in-time{
+	margin-top: 12px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.flight-in-date{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.date-and-money{
+	font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+	float: left;
+	text-align: right;
+	width: 130px;
+	height: 38px;
+	margin-left: 190px;
+	margin-top: 14px;
+}
+
+.city-in{
+	width: 220px;
+	height: 83px;
+	margin: 43px 0 0 17px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 17px;
+	float: left;
+}
+
+.city-from{
+	width: 182px;
+	height: 83px;
+	margin: 43px 0 0 17px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 17px;
+	float: left;
+}
+
+.roubles{
+	font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+span{
+	color: #FF3E3E;
+}
+
+.buy-button{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	bottom: 15px;
+	right: 15px;
+	text-align: center;
+    vertical-align: middle;
+	float: left;
+	width: 174px;
+    height: 40px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid #FF5353;
+    border-radius: 20px;
+}
+
+.bron-text{
+	margin-top: 8px;
+	font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #303030;
+}
