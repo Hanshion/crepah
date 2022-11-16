@@ -13,107 +13,13 @@
 			<li class="list-item" data-id="all"><p>Все рейсы</p></li>
 			<li class="list-item" data-id="local"><p>Внутренние рейсы</p></li>
 			<li class="list-item" data-id="international"><p>Международные рейсы</p></li>
-			<li class="list-item" id="button-return" onclick='location.href="index.html"'><p>Главная</p></li>
+			<li class="list-item" id="button-return" onclick='location.href="index.php"'><p>Главная</p></li>
 		</ul>
 	    <main>
-	    	<div class="flight international" id="flight1">
-	    		<div class="city-from">
-	    			<p class="city1">Лондон, TMP</p>
-	    			<p class="flight-from-time">Вылет: 16:32</p>
-	    			<p class="flight-from-date">28.10.2022</p>
-	    		</div>
-	    		<div class="flight-time">
-	    			<hr class="flight-hr">
-	    			<img class="plane-pic" src="images/flight-plane.png" alt="">
-	    			<p class="flight-time-text">В пути: 4 ч 23 мин</p>
-	    		</div>
-	    		<div class="city-in">
-	    			<p class="city2">Москва, DME</p>
-	    			<p class="flight-in-time">Прибытие: 21:04</p>
-	    			<p class="flight-in-date">28.10.2022</p>
-	    		</div>
-	    		<div class="date-and-money">
-	    			<p>28 Октября</p>
-	    			<p class="roubles">От <span class="summary">32.215₽</span></p>
-	    		</div>
-	    		<div class="buy-button">
-	    			<p class="bron-text">Бронировать</p>
-	    		</div>
-	    	</div>
-	    	<div class="flight international" id="flight1">
-	    		<div class="city-from">
-	    			<p class="city1">Лондон, TMP</p>
-	    			<p class="flight-from-time">Вылет: 23:12</p>
-	    			<p class="flight-from-date">31.10.2022</p>
-	    		</div>
-	    		<div class="flight-time">
-	    			<hr class="flight-hr">
-	    			<img class="plane-pic" src="images/flight-plane.png" alt="">
-	    			<p class="flight-time-text">В пути: 8 ч 2 мин</p>
-	    		</div>
-	    		<div class="city-in">
-	    			<p class="city2">Нью-Йорк, AFW</p>
-	    			<p class="flight-in-time">Прибытие: 7:14</p>
-	    			<p class="flight-in-date">1.11.2022</p>
-	    		</div>
-	    		<div class="date-and-money">
-	    			<p>31 Октября</p>
-	    			<p class="roubles">От <span class="summary">42.723₽</span></p>
-	    		</div>
-	    		<div class="buy-button">
-	    			<p class="bron-text">Бронировать</p>
-	    		</div>
-	    	</div>
-	    	<div class="flight local" id="flight1">
-	    		<div class="city-from">
-	    			<p class="city1">Йоркшир, YRA</p>
-	    			<p class="flight-from-time">Вылет: 4:50</p>
-	    			<p class="flight-from-date">2.11.2022</p>
-	    		</div>
-	    		<div class="flight-time">
-	    			<hr class="flight-hr">
-	    			<img class="plane-pic" src="images/flight-plane.png" alt="">
-	    			<p class="flight-time-text">В пути: 2 ч 2 мин</p>
-	    		</div>
-	    		<div class="city-in">
-	    			<p class="city2">Ланкастер, LRN</p>
-	    			<p class="flight-in-time">Прибытие: 6:52</p>
-	    			<p class="flight-in-date">2.11.2022</p>
-	    		</div>
-	    		<div class="date-and-money">
-	    			<p>2 Ноября</p>
-	    			<p class="roubles">От <span class="summary">16.746₽</span></p>
-	    		</div>
-	    		<div class="buy-button">
-	    			<p class="bron-text">Бронировать</p>
-	    		</div>
-	    	</div>
-	    	<div class="flight international" id="flight1">
-	    		<div class="city-from">
-	    			<p class="city1">Лондон, ARE</p>
-	    			<p class="flight-from-time">Вылет: 16:10</p>
-	    			<p class="flight-from-date">6.11.2022</p>
-	    		</div>
-	    		<div class="flight-time">
-	    			<hr class="flight-hr">
-	    			<img class="plane-pic" src="images/flight-plane.png" alt="">
-	    			<p class="flight-time-text">В пути: 3 ч 12 мин</p>
-	    		</div>
-	    		<div class="city-in">
-	    			<p class="city2">Берлин, MGB</p>
-	    			<p class="flight-in-time">Прибытие: 19:24</p>
-	    			<p class="flight-in-date">6.11.2022</p>
-	    		</div>
-	    		<div class="date-and-money">
-	    			<p>6 Ноября</p>
-	    			<p class="roubles">От <span class="summary">27.174₽</span></p>
-	    		</div>
-	    		<div class="buy-button">
-	    			<p class="bron-text">Бронировать</p>
-	    		</div>
-	    	</div>
+			<!--This gets filled by js-->
 	    </main>
 	</div>
 </body>
-<script src="scripts/flights-script.js"></script>
+<script src="scripts/client/flights-lib.js"></script>
+<script src="scripts/client/flights-script.js"></script>
 </html>

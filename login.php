@@ -12,7 +12,7 @@ session_start();
 	<link rel='stylesheet' type='text/css' media='screen' href='styles/login-style.css'>
 </head>
 
-	<form class="main-block signin-form" action="scripts/signin.php" method="post">
+	<form class="main-block signin-form" action="scripts/api/signin.php" method="post">
 		<p class="login-main-text">Вход</p> 
 		<hr class="separator">
 		<div class="login-block">
@@ -42,7 +42,7 @@ session_start();
 		</div>
 	</form>
 
-	<form class="main-block signup-form" action="scripts/signup.php" method="post" enctype="multipart/form-data">
+	<form class="main-block signup-form" action="scripts/api/signup.php" method="post" enctype="multipart/form-data">
 		<p class="login-main-text">Регистрация</p> 
 		<hr class="separator">
 		<div class="login-block">
@@ -71,11 +71,12 @@ session_start();
 	</form>
 
 	<div class="return">
-		<a href="index.html">
+		<a href="index.php">
 			<img src="images/return.png" class="return-icon" alt="">
 			<p class="return-text">Вернуться</p>
 		</a>
 	</div>
+
+	<script src="scripts/client/login-script.js"></script>
 </body>
-<script src="scripts/login-script.js"></script>
 </html>

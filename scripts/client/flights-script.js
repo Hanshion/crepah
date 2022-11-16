@@ -1,5 +1,5 @@
 const list = document.querySelector('.list')
-const items = document.querySelectorAll('.flight')
+const flight_container = document.querySelector("main")
 
 function fadeElementIn(element) {
     element.style.display = "inline-block"
@@ -18,6 +18,8 @@ function fadeElementOut(element) {
 }
 
 function filter() {
+    const items = document.querySelectorAll('.flight')
+
     list.addEventListener('click', event => {
         const targetId = event.target.dataset.id
         console.log(targetId)
@@ -50,4 +52,20 @@ function filter() {
     })
 }
 
+function fill() {
+    fetch("scripts/api/flights.php")
+    .then((response) => {
+        return response.json()
+    })
+    .then((flights) => {
+        flights.forEach((flight) => {
+            flight_container.appendChild(generateFlightObject(flight, false))
+        })
+    })
+    .catch((reason) => {
+        console.log("Something went wrong while fetching the flights: " + reason)
+    })
+}
+
+fill()
 filter()
