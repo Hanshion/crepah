@@ -9,6 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Royal Airlines</title>
 	<link rel="stylesheet" href="styles/index-style.css">
+	<link rel="icon" type="image/ico" href="images/title-icon.png">
 </head>
 <body>
 	<header>
